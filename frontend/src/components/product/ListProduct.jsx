@@ -115,9 +115,9 @@ export default function ListProduct (){
         },
         { 
             name:"Action",
-            selector:row=><> <button className="btn btn-success mx-2" >Add to cart</button>
+            selector:row=><> <button className="btn btn-success mx-2" onClick={(e)=>{(row.isAddedToCart)?removeFromCart(row._id):addToCart(row._id, row.price)}} >{(row.isAddedToCart)?"Remove from Cart":"Add to Cart"}</button>
             <button className="btn btn-danger" onClick={(event)=>{deleteProduct(row._id)}} >Delete Product</button>
-              </>,
+            <Link to={`/EditProduct/${row._id}`} className="btn btn-primary">Edit Product</Link></>,
             sortable:false
         }
     ]

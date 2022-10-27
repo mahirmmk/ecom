@@ -1,0 +1,12 @@
+.addPro{
+    background: url(./patternpad.svg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #000000d5;
+
+}
+.transaddpro{
+    background-color: #ffffffdc;
+    padding: 10px;
+}

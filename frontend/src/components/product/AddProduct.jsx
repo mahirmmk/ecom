@@ -6,6 +6,7 @@ import axios from "axios";
 import { useState } from "react";
 import toast, { Toaster } from 'react-hot-toast';
 import { Config } from "../auth/services/AuthServices";
+import "./AddProduct.css"
 
  
 export default function AddProduct (){
@@ -46,10 +47,10 @@ export default function AddProduct (){
     
   }
     return( <>
-        <div className="container  " style={{background:"linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(156,156,255,1) 45%, rgba(0,212,255,1) 96%)"}}>
+        <div className="container addPro  " >
             <h1> Add Product</h1>
             <div className="row p-4 ">
-                <div className="col-md-6 ">
+                <div className="col-md-6 transaddpro ">
                 <Form onSubmit={submitFunc}>
       <Form.Group className="mb-3" controlId="formBasicEmail">
         <Form.Label>Product Title</Form.Label>

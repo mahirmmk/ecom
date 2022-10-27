@@ -56,8 +56,9 @@ exports.editProduct=(req, res)=>{
 exports.patchProduct=(req, res)=>{
     const userID=req.userData.userID
     const id=req.params.id;
-    const{title,cat,price,desc,image}=req.body;
-    product.findByIdAndUpdate({_id:id}, {title:title, cat:cat, desc:desc, price:price, image:image, createdby:userID}).then(res.json({
+    const url=req.protocol +'://'+req.get("host");
+    const{title,cat,price,desc}=req.body;
+    product.findByIdAndUpdate({_id:id}, {title:title, cat:cat, desc:desc, price:price, createdby:userID}).then(res.json({
         updatedData:req.body,
         message:"YOUR DATA HAS BEEN UPDATED SUCCESSFULLY"
     

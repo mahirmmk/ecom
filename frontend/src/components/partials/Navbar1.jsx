@@ -43,9 +43,10 @@ export default function Navbar1 (){
           <Link className="navbar-brand" to="/Home" >MMKart</Link>
         <Link className="nav-link active" to="/Home" aria-current="page"  >Home</Link>
         <Link className="nav-link active" to="/ListProduct" aria-current="page"  >Products</Link>
-        <Link className="nav-link active" to="/AddProduct" aria-current="page"  >Add Product</Link>       
+              
         {         
           (isAdmind()=="admin") && <>
+            <Link className="nav-link active" to="/AddProduct" aria-current="page"  >Add Product</Link> 
             <Link className="nav-link active" to="/allUsers"  aria-current="page"  >Users</Link>
           </>
         }      
