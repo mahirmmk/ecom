@@ -20,9 +20,15 @@ export default function Login(){
             localStorage.setItem("_token", token)            
             navigate("/Home");            
             window.location.reload();
-            toast.success("Login successfully")
+            toast.success("Login successfully")         
+           
         }catch(error){
-            console.log(error)
+          
+            toast("User not found")
+            setTimeout(()=>{
+                toast(" register first")    
+                navigate("/register")
+            }, 1000)
         }
     }
 

@@ -58,7 +58,7 @@ export default function EditProduct () {
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Image</Form.Label>
-        <input className="form-control" type="text" placeholder="Enter image url" name="image" defaultValue={product.image} />
+        <input disabled className="form-control" type="text" placeholder="Enter image url" name="image" defaultValue={product.image} />
       </Form.Group>
       <Form.Group className="mb-3" controlId="formBasicPassword">
         <Form.Label>Description</Form.Label>

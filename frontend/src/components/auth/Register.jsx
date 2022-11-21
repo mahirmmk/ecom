@@ -29,7 +29,7 @@ export default function Register(){
     }
 
     return(<>
-            <div className="container-fluid bg-dark text-light">
+            <div className="container-fluid bg-dark opacity-75 text-light">
                 <div className="row justify-content-center">
                     <div className="col-sm-10 col-md-8 col-lg-6">
                         <h1 className="m-2">Register User</h1>
